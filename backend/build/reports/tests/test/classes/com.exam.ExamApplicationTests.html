@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ExamApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ExamApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.exam.html">com.exam</a> &gt; ExamApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.393s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Context Loads &amp; Spring Boot starts cleanly</td>
+<td class="success">contextLoads()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Builder Pattern: ExamBuilder constructs valid Exam entity with invariants</td>
+<td class="success">testExamBuilder()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Strategy Pattern: Test Strict, Negative Marking, and Partial Credit grading</td>
+<td class="success">testGradingStrategies()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Observer Pattern: ExamEventPublisher broadcasts to registered observers</td>
+<td class="success">testObserverPattern()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Polymorphism: Question.evaluate() evaluates MCQ, TF, ShortAnswer correctly</td>
+<td class="success">testPolymorphicEvaluation()</td>
+<td class="success">0.387s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Factory Pattern: QuestionFactory creates correct polymorphic question types</td>
+<td class="success">testQuestionFactory()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>16:20:57.377 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.exam.ExamApplicationTests]: ExamApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:20:57.424 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.exam.OnlineExamApplication for test class com.exam.ExamApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-11-15T16:20:57.578+05:30  INFO 34264 --- [online-examination-system] [    Test worker] com.exam.ExamApplicationTests            : Starting ExamApplicationTests using Java 17.0.19 with PID 34264 (started by nprinzan in /Users/nprinzan/Desktop/Code/College/OOPS/Online examination system/backend)
+2026-11-15T16:20:57.578+05:30  INFO 34264 --- [online-examination-system] [    Test worker] com.exam.ExamApplicationTests            : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2026-11-15T16:20:58.034+05:30  INFO 34264 --- [online-examination-system] [    Test worker] com.exam.ExamApplicationTests            : Started ExamApplicationTests in 0.552 seconds (process running for 0.988)
+[ExamEventPublisher] Registered observer: RealTimeNotificationService
+[ExamEventPublisher] Registered observer: RealTimeAnalyticsEngine
+&gt;&gt;&gt; Online Examination System data seeded with academic college courses!
+[ExamEventPublisher] Registered observer: RealTimeNotificationService
+[ExamEventPublisher] Publishing event: EXAM_STARTED for Exam: Operating Systems
+[NotificationObserver] Candidate Alex Mercer has begun Exam: 'Operating Systems'.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.9</a> at 15-Nov-2026, 4:20:58 pm</p>
+</div>
+</div>
+</body>
+</html>

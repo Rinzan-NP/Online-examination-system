@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.exam.ExamApplicationTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-15T10:50:58" hostname="Rinzans-MacBook-Pro.local" time="0.395">
+  <properties/>
+  <testcase name="Polymorphism: Question.evaluate() evaluates MCQ, TF, ShortAnswer correctly" classname="com.exam.ExamApplicationTests" time="0.387"/>
+  <testcase name="Builder Pattern: ExamBuilder constructs valid Exam entity with invariants" classname="com.exam.ExamApplicationTests" time="0.001"/>
+  <testcase name="Factory Pattern: QuestionFactory creates correct polymorphic question types" classname="com.exam.ExamApplicationTests" time="0.001"/>
+  <testcase name="Strategy Pattern: Test Strict, Negative Marking, and Partial Credit grading" classname="com.exam.ExamApplicationTests" time="0.001"/>
+  <testcase name="Context Loads &amp; Spring Boot starts cleanly" classname="com.exam.ExamApplicationTests" time="0.001"/>
+  <testcase name="Observer Pattern: ExamEventPublisher broadcasts to registered observers" classname="com.exam.ExamApplicationTests" time="0.002"/>
+  <system-out><![CDATA[16:20:57.377 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.exam.ExamApplicationTests]: ExamApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:20:57.424 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.exam.OnlineExamApplication for test class com.exam.ExamApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-11-15T16:20:57.578+05:30  INFO 34264 --- [online-examination-system] [    Test worker] com.exam.ExamApplicationTests            : Starting ExamApplicationTests using Java 17.0.19 with PID 34264 (started by nprinzan in /Users/nprinzan/Desktop/Code/College/OOPS/Online examination system/backend)
+2026-11-15T16:20:57.578+05:30  INFO 34264 --- [online-examination-system] [    Test worker] com.exam.ExamApplicationTests            : No active profile set, falling back to 1 default profile: "default"
+2026-11-15T16:20:58.034+05:30  INFO 34264 --- [online-examination-system] [    Test worker] com.exam.ExamApplicationTests            : Started ExamApplicationTests in 0.552 seconds (process running for 0.988)
+[ExamEventPublisher] Registered observer: RealTimeNotificationService
+[ExamEventPublisher] Registered observer: RealTimeAnalyticsEngine
+>>> Online Examination System data seeded with academic college courses!
+[ExamEventPublisher] Registered observer: RealTimeNotificationService
+[ExamEventPublisher] Publishing event: EXAM_STARTED for Exam: Operating Systems
+[NotificationObserver] Candidate Alex Mercer has begun Exam: 'Operating Systems'.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
